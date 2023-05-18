@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #0D1821;
+    min-height: 100vh;
+    padding: 1.2rem 0;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+
+  .editor-container{
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .previewer-container{
+    width: 60%;
+    margin-top: 1rem;
+  }
+  
+  .editor{
+    width: 100%;
+    min-height: 30vh;
+    resize: vertical;
+    background-color: #5275A4;
+    border: 1px solid white;
+    outline: none;
+  }
+
+  .previewer{
+    min-height: 90vh;
+    max-height: 100%;
+  }
+
+  .editor-title{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .toolbar{
+    width: 100%;
+    border: 1px solid white;
+    background-color: #344966;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 1rem;
+  }
+  
+  .toolbar h1{
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .arrows-icon :hover{
+    color: #4093FF;
+    cursor: pointer;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
